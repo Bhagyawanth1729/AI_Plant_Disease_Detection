@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bot_bg">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bot_surface"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="History"
+        app:titleTextColor="@color/bot_text_primary" />
+
+    <TextView
+        android:id="@+id/accountLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/bot_text_secondary"
+        android:textSize="14sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/historyTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bot_surface"
+        app:tabIndicatorColor="@color/bot_primary"
+        app:tabSelectedTextColor="@color/bot_primary_dark"
+        app:tabTextColor="@color/bot_text_secondary" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/panelChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/historyScroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/historyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/bot_text_primary"
+                    android:textSize="15sp" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panelScans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scanRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:padding="16dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/emptyScans"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="No scans yet. Use example plants on the home screen or scan/upload a leaf."
+                android:textColor="@color/bot_text_secondary"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Clear history"
+        android:textAllCaps="false"
+        android:textColor="@color/bot_primary"
+        app:backgroundTint="@color/bot_surface"
+        app:cornerRadius="14dp"
+        app:strokeColor="@color/bot_accent"
+        app:strokeWidth="1dp" />
+
+</LinearLayout>
+

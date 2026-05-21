@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: plant-guard-ai-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: NO_LEAF_THRESHOLD
+        value: "0.7"
