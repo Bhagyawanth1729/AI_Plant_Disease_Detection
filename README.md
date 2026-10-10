@@ -3,7 +3,7 @@
 Android application for **on-device plant leaf disease classification** combined with an **optional AI assistant** for follow-up questions. The project suits undergraduate thesis work in mobile computing, applied machine learning, or precision agriculture.
 
 ---
-
+ 
 ## Abstract (thesis-ready summary)
 
 Smallholder and home growers often lack quick access to plant pathologists. This work presents **Plant Guard AI**, a native Android app that captures or imports leaf images, verifies that the subject is likely a leaf, classifies **15 disease or health states** for pepper, potato, and tomato (labels aligned with the widely used PlantVillage-style taxonomy), and shows **rule-based treatment hints**. Classification runs **locally** using **ONNX Runtime** and two neural models (a leaf gate and a DenseNet-style disease classifier). An integrated **chatbot** uses the **Groq** API (OpenAI-compatible HTTP) so users can ask contextual questions when a network is available; chat and scan history can be persisted per user. The stack is **Kotlin**, **CameraX**, **View Binding**, and **shared preferences–backed** user and history managers.
