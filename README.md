@@ -106,7 +106,7 @@ app/src/main/
 │   ├── AdminActivity.kt     # User list admin UI
 │   ├── PlantGuardApplication.kt
 │   └── utils/               # UserManager, ScanHistoryManager, ChatHistoryManager, etc.
-└── res/                     # Layouts, themes, drawables
+└── res/                     # Layouts, themes, drawables 
 ```
 
 Root Gradle project name: **Plant Guard AI** (`settings.gradle`).
