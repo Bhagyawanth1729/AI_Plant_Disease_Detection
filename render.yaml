@@ -11,4 +11,4 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: NO_LEAF_THRESHOLD
-        value: "0.7"
+        value: "0.75"
