@@ -29,5 +29,5 @@
     at responseToError (/Users/asl/.nvm/versions/node/v22.4.1/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
     at RetryOperation._fn (/Users/asl/.nvm/versions/node/v22.4.1/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[error] 
+[error]
 [error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
