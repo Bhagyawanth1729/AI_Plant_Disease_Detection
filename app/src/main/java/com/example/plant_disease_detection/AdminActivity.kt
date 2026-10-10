@@ -1,5 +1,4 @@
 package com.example.plant_disease_detection
-
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
