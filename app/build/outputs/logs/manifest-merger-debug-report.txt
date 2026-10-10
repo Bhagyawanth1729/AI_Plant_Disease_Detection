@@ -543,4 +543,5 @@ ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\bhagyawan
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\bhagyawanth\.gradle\caches\8.13\transforms\9b37afd626f466672185de8e4ecc2e34\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\bhagyawanth\.gradle\caches\8.13\transforms\9b37afd626f466672185de8e4ecc2e34\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\bhagyawanth\.gradle\caches\8.13\transforms\9b37afd626f466672185de8e4ecc2e34\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92 
+
