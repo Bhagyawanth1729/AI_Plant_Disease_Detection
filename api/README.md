@@ -3,7 +3,6 @@
 FastAPI backend for deploying the plant leaf ONNX models on Render.
 
 ## Endpoints
-
 - `GET /health` - checks whether the service is alive.
 - `POST /predict` - accepts an image in form-data field `file`.
 
