@@ -25,7 +25,7 @@ Response:
   "treatment": "Remove lower infected leaves, stake plants for better airflow, rotate crops, and use fungicide when necessary.",
   "class_index": 6
 }
-```
+``` 
 
 ## Render Deployment
 
